@@ -15,7 +15,7 @@ export const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("bright-bat-yoke.cyclic.app/users/login", formData)
+      .post("https://bright-bat-yoke.cyclic.app/users/login", formData)
       .then((res) => {
         console.log(res);
         localStorage.setItem('token',JSON.stringify(res.data.token))

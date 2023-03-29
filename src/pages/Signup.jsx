@@ -20,7 +20,7 @@ export const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("bright-bat-yoke.cyclic.app/users/register", formData)
+      .post("https://bright-bat-yoke.cyclic.app/users/register", formData)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   }
